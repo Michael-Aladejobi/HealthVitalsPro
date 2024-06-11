@@ -40,7 +40,7 @@ document
             .then((userCredential) => {
                 // Signed up
                 const user = userCredential.user;
-                alert("Account Created Successfully!");
+                alert("Patient Account Created Successfully!");
                 window.location.href = "index.html";
             })
             .catch((error) => {
