@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Setting up the character encoding and viewport for better compatibility -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title of the webpage -->
+        <title>HEALTHVITALS | Patient List</title>
+
+        <!-- Linking to external fonts and icons -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Linking to custom stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Additional CSS for table styling -->
+        <style>
+            .patient-table {
+                font-size: small;
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            .patient-table th,
+            .patient-table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                text-transform: uppercase;
+            }
+
+            .patient-table th {
+                background-color: #f2f2f2;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .patient-table tr:hover {
+                background-color: #5c5a5a;
+            }
+
+            .patient-table img {
+                max-width: 50px;
+                height: auto;
+                border-radius: 50%;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: #ffffff;
+            }
+
+            table th,
+            table td {
+                padding: 15px;
+                text-align: left;
+            }
+
+            table tbody tr:nth-child(odd) {
+                background-color: #000000;
+            }
+
+            table tbody tr:nth-child(even) {
+                background-color: #3d3b3b;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="main-nav">
+            <!-- Logo linking to the dashboard -->
+            <a href="dashboard.html">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="" class="logo-img" />
+                    HealthVitals
+                </div>
+            </a>
+            <!-- Link to go back to home -->
+            <div class="nav">
+                <a href="dashboard.html">Back to Home</a>
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <!-- Heading for patient list -->
+        <h2>Registered Patient List</h2>
+        <!-- Table to display patient information -->
+        <div class="patient-table">
+            <table>
+                <thead>
+                    <!-- Table header -->
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Gender</th>
+                        <th>Phone</th>
+                        <th>Date Registered</th>
+                        <!-- <th>Image</th> -->
+                    </tr>
+                </thead>
+                <tbody id="patient-data">
+                    <!-- Patient data is dynamically injected here from "patients.js" -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Script for fetching and displaying patient data -->
+        <script src="patients.js" type="module" defer></script>
+    </body>
+</html>

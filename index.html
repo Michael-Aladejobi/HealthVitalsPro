@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Original comment: Title of the webpage -->
+        <title>HEALTHVITALS ? | LOGIN</title>
+
+        <!-- Linking to external fonts and icons -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Linking to custom stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <!-- divs for background shapes(circle) -->
+    <body>
+        <!-- Background shapes for visual design -->
+        <div class="background">
+            <div class="shape"></div>
+            <!-- Original comment: You can add more shapes here if needed -->
+            <!-- <div class="shape"></div> -->
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="main-nav">
+            <!-- Original comment: Logo linking to the homepage -->
+            <a href="#">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="" class="logo-img" />
+                    HealthVitals
+                </div>
+            </a>
+            <!-- Placeholder for navigation links -->
+            <div class="nav"><a href="#"></a></div>
+            <div class="nav"><a href="#"></a></div>
+            <div class="nav"><a href="#"></a></div>
+            <!-- Original comment: Placeholder for additional navigation links -->
+            <a href="#"><div class="nav"></div></a>
+            <!-- Original comment: Placeholder for a link to register as admin -->
+            <!-- <a href="signup.html"><div class="nav">Register as Admin</div></a> -->
+        </div>
+        <br />
+        <!-- <div
+            style="
+                background-color: #eeeaea;
+                border-radius: 10px;
+                float: right;
+                margin-right: 50px;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: none;
+                transition: 0.5s;
+            "
+            class="result-checker"
+        >
+            <a href="checkResult.html">
+                <img
+                    style="width: 100px; height: 100px"
+                    src="assets/images/medical-record.png"
+                    alt="Results"
+                />
+                <p style="color: #000">Patient Login</p>
+            </a>
+        </div> -->
+
+        <!-- Login form -->
+        <form class="login-form">
+            <!-- Original comment: Heading for the login section -->
+            <h3 class="sign-in-up">
+                Login |
+                <!-- Original comment: Uncomment below to add a link for sign up -->
+                <a href="signup.html">Sign Up</a>
+            </h3>
+
+            <!-- Email input field -->
+            <label for="email">Email</label>
+            <input
+                type="text"
+                placeholder="Enter email address e.g test@gmail.com"
+                id="email-el"
+                required
+            />
+
+            <!-- Password input field -->
+            <label for="password">Password</label>
+            <input
+                type="password"
+                placeholder="Enter your Password"
+                id="password-el"
+                required
+            />
+
+            <!-- Forget password link -->
+            <div class="forget-password">
+                <a href="#" id="forget-password"> Forget Password? </a>
+            </div>
+
+            <!-- Submit button -->
+            <button id="submit-btn">Submit</button>
+        </form>
+
+        <!-- Original comment: Linking to JavaScript file for additional functionality -->
+        <!-- <script src="dashboard.js"></script> -->
+        <script src="index.js" type="module" defer></script>
+    </body>
+</html>

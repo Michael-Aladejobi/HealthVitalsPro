@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Setting up the character encoding and viewport for better compatibility -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HEALTHVITALS | HOME</title>
+
+        <!-- Linking to external fonts and icons -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Linking to custom stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="main-nav">
+            <!-- Logo linking to the dashboard -->
+            <a href="dashboard.html">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="" class="logo-img" />
+                    HealthVitals
+                </div>
+            </a>
+            <!-- Navigation links -->
+            <div class="nav"><a href="dashboard.html">Home</a></div>
+            <!-- Placeholder for additional navigation links -->
+            <div class="nav"><a href="#"></a></div>
+            <div class="nav"><a href="#"></a></div>
+            <!-- Link to sign out -->
+            <div class="nav"><a href="index.html">Sign out</a></div>
+        </div>
+
+        <div id="container1">
+            <div
+                style="padding-top: 0px; border-radius: 10px"
+                class="registration-section1"
+            >
+                <!-- Placeholder for displaying currently logged-in user -->
+                <h2
+                    id="logged-in-as"
+                    style="font-weight: bolder; padding-top: 100px"
+                >
+                    LoggedIn as:
+                </h2>
+            </div>
+
+            <div class="section1 section-1a">
+                <!-- Link to add a new patient -->
+                <a href="addNewPatientForm.html"
+                    ><div class="run-a-test">Add New Patient</div></a
+                >
+                <!-- Link to view patients -->
+                <a href="patients.html"><div class="patient">Patients</div></a>
+            </div>
+        </div>
+
+        <!-- Linking to JavaScript file for additional functionality -->
+        <script src="dashboard.js" type="module" defer></script>
+    </body>
+</html>

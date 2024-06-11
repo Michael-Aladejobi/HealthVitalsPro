@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Check Result</title>
+        <link rel="stylesheet" href="" />
+        <style>
+            body {
+                background-color: #000;
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .container {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 30px;
+                width: 80%;
+                max-width: 400px;
+                text-align: center;
+            }
+            h1 {
+                color: #0f7a73;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            #userID {
+                display: block;
+                height: 50px;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.07);
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 0 10px;
+                margin-bottom: 15px;
+                font-size: 16px;
+                color: #333;
+            }
+            ::placeholder {
+                color: #e5e5e5;
+            }
+            .button {
+                width: 100%;
+                background-color: #0f7a73;
+                border: 1px solid #0f7a73;
+                color: #fff;
+                padding: 15px 0;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .button:hover {
+                background-color: #0d6c63;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Enter ID to Login</h1>
+            <form id="userForm" action="#">
+                <input
+                    type="text"
+                    id="userID"
+                    name="userID"
+                    placeholder="Enter User ID"
+                /><br />
+                <input class="button" type="submit" value="Submit" />
+            </form>
+        </div>
+        <script src="checkResult.js"></script>
+    </body>
+</html>
