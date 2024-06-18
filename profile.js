@@ -38,7 +38,7 @@ const displayPatientInfo = async () => {
 
         if (docSnap.exists()) {
             const patient = docSnap.data();
-                        console.log("Patient data:", patient); // Log patient data for debugging
+            console.log("Patient data:", patient); // Log patient data for debugging
 
             patientProfile.innerHTML = `
                 <h3>${patient.firstName} ${patient.lastName}</h3>
@@ -48,6 +48,7 @@ const displayPatientInfo = async () => {
                 padding: 5px 15x;">ID: ${patientId}</p>
                 <p>Email: ${patient.email}</p>
                 <p>Address: ${patient.address}</p>
+                <p>Age: ${patient.age}</p>
                 <p>Gender: ${patient.gender}</p>
                 <p>Phone: ${patient.phoneNo}</p>
                 <p>Date Registered: ${patient.date}</p>

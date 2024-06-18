@@ -41,6 +41,7 @@ patientForm.addEventListener("submit", async (e) => {
     const email = document.getElementById("email-el").value;
     const address = document.getElementById("address-el").value;
     const gender = document.getElementById("gender-el").value;
+    const age = document.getElementById("age-el").value;
     const phoneNo = document.getElementById("phone-no-el").value;
     const date = document.getElementById("date-el").value;
     const image = document.getElementById("image-el").value;
@@ -53,6 +54,7 @@ patientForm.addEventListener("submit", async (e) => {
             email: email,
             address: address,
             gender: gender,
+            age: age,
             phoneNo: phoneNo,
             date: date,
             Image: image,
