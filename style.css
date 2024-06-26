@@ -196,6 +196,17 @@ input[type="file"] {
     background-color: rgba(222, 222, 222, 0.16);
 }
 
+input[type="date"] {
+    
+    color: #fff; 
+    padding-right: 25px; 
+}
+
+/* Style for the date picker icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* Change color of the default calendar icon */
+    filter: invert(1);
+}
 #upload-btn {
     width: 100px;
 }
