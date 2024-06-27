@@ -88,9 +88,9 @@ function addTableRow(dataTableBody, patientID, readingID, reading) {
     // Patient's Critical Condition Algorithm
 
     // Check conditions for temperature
-    if (!(reading.temperature === 36.5 && reading.temperature === 37.2)) {
-        temperatureCell.style.backgroundColor = "#c71f2d";
-    }
+    //if (!(reading.temperature === 36.5 && reading.temperature === 37.2)) {
+      //  temperatureCell.style.backgroundColor = "#c71f2d";
+    //}
 
     //Available for upgrades
 
