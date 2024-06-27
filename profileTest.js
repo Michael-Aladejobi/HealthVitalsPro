@@ -91,7 +91,7 @@ function addTableRow(dataTableBody, patientID, readingID, reading) {
     //if (!(reading.temperature === 36.5 && reading.temperature === 37.2)) {
       //  temperatureCell.style.backgroundColor = "#c71f2d";
     //}
- if ((reading.temperature>0) {
+ if ((reading.temperature > 0) {
        temperatureCell.style.backgroundColor = "grey";
     }
     //Available for upgrades
@@ -108,7 +108,7 @@ function addTableRow(dataTableBody, patientID, readingID, reading) {
 
     // Check conditions for weight
     if (reading.weight > 0) {
-        weightCell.style.backgroundColor = "#blue";
+        weightCell.style.backgroundColor = "blue";
     }
 }
 
