@@ -87,29 +87,29 @@ function addTableRow(dataTableBody, patientID, readingID, reading) {
 
     // Patient's Critical Condition Algorithm
 
-    // Check conditions for temperature
-    //if (!(reading.temperature === 36.5 && reading.temperature === 37.2)) {
-      //  temperatureCell.style.backgroundColor = "#c71f2d";
-    //}
- if (!(reading.temperature > 0) {
-       temperatureCell.style.backgroundColor = "grey";
+    Check conditions for temperature
+    if (!(reading.temperature === 36.5 && reading.temperature === 37.2)) {
+       temperatureCell.style.backgroundColor = "#c71f2d";
     }
-    //Available for upgrades
+ // if (!(reading.temperature > 0) {
+ //       temperatureCell.style.backgroundColor = "grey";
+ //    }
+ //    //Available for upgrades
 
-    // Check conditions for pulse
-    if (!reading.pulse > 0) {
-        pulseCell.style.backgroundColor = "red";
-    }
+ //    // Check conditions for pulse
+ //    if (!reading.pulse > 0) {
+ //        pulseCell.style.backgroundColor = "red";
+ //    }
 
-    // Check conditions for height
-    if (!reading.height > 0) {
-        heightCell.style.backgroundColor = "green";
-    }
+ //    // Check conditions for height
+ //    if (!reading.height > 0) {
+ //        heightCell.style.backgroundColor = "green";
+ //    }
 
-    // Check conditions for weight
-    if (!reading.weight > 0) {
-        weightCell.style.backgroundColor = "blue";
-    }
+ //    // Check conditions for weight
+ //    if (!reading.weight > 0) {
+ //        weightCell.style.backgroundColor = "blue";
+ //    }
 }
 
 // function to save data with your own patient IDs
