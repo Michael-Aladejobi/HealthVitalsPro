@@ -411,7 +411,7 @@ if (digitalRead(weightButtonPin) == LOW) {
   int adcValue = analogRead(analogPin);
   
   // Convert the ADC value to voltage (assuming a 12-bit ADC with 3.3V reference)
-  float voltage = adcValue * (3.3 / 4095.0);
+  voltage = adcValue * (3.3 / 4095.0);
   
   float weightMeasurement = (voltage * slope) + intercept;
   lcd.setCursor(0, 1);
