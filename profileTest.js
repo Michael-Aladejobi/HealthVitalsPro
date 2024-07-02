@@ -92,7 +92,7 @@ function addTableRow(dataTableBody, patientID, readingID, reading) {
     //     temperatureCell.style.backgroundColor = "#c71f2d";
     // }
     if (reading.temperature > 1) {
-        temperatureCell.style.backgroundColor = "#c71f2d";
+        temperatureCell.style.backgroundColor = "orange";
     }
 
     //Available for upgrades
