@@ -21,7 +21,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app); // Get the Auth instance
 const user = auth.currentUser; // Get the current user
 
-console.log(user); // Log the current user to the console
+//console.log(user); // Log the current user to the console
 onAuthStateChanged(auth, (user) => {
     if (user) {
         // If user is signed in
