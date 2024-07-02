@@ -5,7 +5,7 @@
 This document provides an overview and detailed explanation of the HTML code for the HealthVitals web pages.
 
 
-#Login Page
+# Login Page
 ## Table of Contents
 
 -   [Introduction](#introduction)
