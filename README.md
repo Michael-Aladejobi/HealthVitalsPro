@@ -1,9 +1,11 @@
 <!-- index.html Page -->
 
-# HealthVitals Login Page
+# HealthVitals Project
 
-This document provides an overview and detailed explanation of the HTML code for the HealthVitals login page.
+This document provides an overview and detailed explanation of the HTML code for the HealthVitals web pages.
 
+
+#Login Page
 ## Table of Contents
 
 -   [Introduction](#introduction)
