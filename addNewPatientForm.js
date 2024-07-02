@@ -62,7 +62,7 @@ patientForm.addEventListener("submit", async (e) => {
 
         alert("Processing..."); // Display a processing message
         console.log("Document written with ID: ", docRef.id); // Log document ID to console
-        alert("Patient information stored successfully!"); // Display success message
+        alert("Patient' information UPLOADED!"); // Display success message
 
         // Clear the form
         patientForm.reset();
