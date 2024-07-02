@@ -1,7 +1,7 @@
 /* default all elements with no padding and margin */
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
