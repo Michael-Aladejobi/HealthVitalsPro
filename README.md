@@ -342,13 +342,13 @@ The VitalCare project uses Firebase for authentication purposes. This script ini
 
     ```javascript
     const firebaseConfig = {
-        apiKey: "AIzaSyMirPSPywX9YZJZ79htSpKO5c",
-        authDomain: "wr8.firebaseapp.com",
-        databaseURL: "https://wrud-518-default-rtdb.firebaseio.com",
-        projectId: "wrud-5b418",
-        storageBucket: "wrud-5o48.appspot.com",
-        messagingSenderId: "86730294",
-        appId: "1:867302937144:web:152fa28350ccd",
+        apiKey: "AIzaSyMirPSPywX9YZJZ79ht5c",
+        authDomain: "w.firebaseapp.com",
+        databaseURL: "https://wrud-518-default-rtdb.firebasecom",
+        projectId: "wrud-51",
+        storageBucket: "wr-5o.appspot.com",
+        messagingSenderId: "86294",
+        appId: "1:867302937144:web:15250ccd",
     };
     ```
 
