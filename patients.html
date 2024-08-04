@@ -74,6 +74,45 @@
             table tbody tr:nth-child(even) {
                 background-color: #3d3b3b;
             }
+            .search-container {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin: 0px;
+            }
+            #searchInput {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 40%;
+                color: white;
+            }
+            .search-container button {
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 4px;
+                margin-left: 10px;
+                cursor: pointer;
+                background-color: #28a745;
+                color: #fff;
+            }
+            .search-container button.reset {
+                background-color: #dc3545;
+            }
+            #search-btn {
+                width: 20%;
+                margin-top: 5px;
+            }
+            #reset-btn {
+                width: 20%;
+                margin-top: 5px;
+            }
+            .hidden {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -96,6 +135,13 @@
 
         <!-- Heading for patient list -->
         <h2>Registered Patient List</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button onclick="searchText()" id="search-btn">Search</button>
+            <button class="reset" onclick="resetSearch()" id="reset-btn">
+                Reset
+            </button>
+        </div>
         <!-- Table to display patient information -->
         <div class="patient-table">
             <table>
@@ -105,11 +151,10 @@
                         <th>Patient ID</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Address</th>
+                        <!-- <th>Address</th> -->
                         <th>Gender</th>
-                        <th>Phone</th>
+                        <!-- <th>Phone</th> -->
                         <th>Date Registered</th>
-                        <!-- <th>Image</th> -->
                     </tr>
                 </thead>
                 <tbody id="patient-data">
@@ -120,5 +165,47 @@
 
         <!-- Script for fetching and displaying patient data -->
         <script src="patients.js" type="module" defer></script>
+        <script>
+            function searchText() {
+                // Get the input value
+                const searchInput = document
+                    .getElementById("searchInput")
+                    .value.toLowerCase();
+
+                // Get all rows in the table body
+                const rows = document.querySelectorAll("#patient-data tr");
+
+                // Loop through all rows to search for the text
+                rows.forEach((row) => {
+                    const cells = row.querySelectorAll("td");
+                    let match = false;
+                    cells.forEach((cell) => {
+                        if (
+                            cell.textContent.toLowerCase().includes(searchInput)
+                        ) {
+                            match = true;
+                        }
+                    });
+                    if (match) {
+                        row.classList.remove("hidden");
+                    } else {
+                        row.classList.add("hidden");
+                    }
+                });
+            }
+
+            function resetSearch() {
+                // Get all rows in the table body
+                const rows = document.querySelectorAll("#patient-data tr");
+
+                // Loop through all rows to reset their visibility
+                rows.forEach((row) => {
+                    row.classList.remove("hidden");
+                });
+
+                // Clear the search input
+                document.getElementById("searchInput").value = "";
+            }
+        </script>
     </body>
 </html>

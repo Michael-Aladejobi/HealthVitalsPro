@@ -33,13 +33,14 @@ const displayPatients = async () => {
             const patient = doc.data(); // Get patient data
             const row = document.createElement("tr"); // Create a table row element
             // Populate the row with patient data
+            // <td>${patient.phoneNo}</td>;
+            // <td>${patient.address}</td>;
+
             row.innerHTML = `
                 <td><a href="profile.html?id=${doc.id}">${doc.id}</a></td>
                 <td>${patient.firstName} ${patient.lastName}</td>
                 <td>${patient.email}</td>
-                <td>${patient.address}</td>
                 <td>${patient.gender}</td>
-                <td>${patient.phoneNo}</td>
                 <td>${patient.date}</td>
             `;
             patientData.appendChild(row); // Append the row to the patient data container
