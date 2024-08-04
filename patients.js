@@ -28,8 +28,15 @@ const displayPatients = async () => {
     try {
         // Query the "patients" collection
         const querySnapshot = await getDocs(collection(db, "patients"));
+
+        // Convert querySnapshot to array and sort by date
+        const sortedPatients = querySnapshot.docs.sort((a, b) => {
+            const dateA = a.data().date;
+            const dateB = b.data().date;
+            return dateB.localeCompare(dateA); // Sort in descending order
+        });
         // Loop through each document in the collection
-        querySnapshot.forEach((doc) => {
+        sortedPatients.forEach((doc) => {
             const patient = doc.data(); // Get patient data
             const row = document.createElement("tr"); // Create a table row element
             // Populate the row with patient data

@@ -136,7 +136,7 @@
         <!-- Heading for patient list -->
         <h2>Registered Patient List</h2>
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search..." />
+            <input type="text" id="searchInput" placeholder="Enter Name..." />
             <button onclick="searchText()" id="search-btn">Search</button>
             <button class="reset" onclick="resetSearch()" id="reset-btn">
                 Reset
@@ -166,6 +166,7 @@
         <!-- Script for fetching and displaying patient data -->
         <script src="patients.js" type="module" defer></script>
         <script>
+            
             function searchText() {
                 // Get the input value
                 const searchInput = document
