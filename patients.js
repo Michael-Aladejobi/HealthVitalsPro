@@ -35,11 +35,11 @@ const displayPatients = async () => {
             // Populate the row with patient data
             // <td>${patient.phoneNo}</td>;
             // <td>${patient.address}</td>;
+            // <td>${patient.email}</td>
 
             row.innerHTML = `
                 <td><a href="profile.html?id=${doc.id}">${doc.id}</a></td>
                 <td>${patient.firstName} ${patient.lastName}</td>
-                <td>${patient.email}</td>
                 <td>${patient.gender}</td>
                 <td>${patient.date}</td>
             `;
